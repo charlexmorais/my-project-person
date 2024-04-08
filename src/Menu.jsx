@@ -1,32 +1,37 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Importe o componente Link do React Router
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./css/style.css"
+import "./css/style.css";
 
 function Navigation() {
   return (
     <div>
       <header>
-        <nav className="headerfield"> 
-          <ul class="nav justify-content-end ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+        <nav className="headerfield">
+          <ul className="nav justify-content-end">
+            <li className="nav-item">
+              {/* Use o componente Link para criar um link para a página Home */}
+              <Link className="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              {/* Use o componente Link para criar um link para a página About */}
+              <Link className="nav-link" to="/about">
                 About
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              {/* Use o componente Link para criar um link para a página Contact */}
+              <Link className="nav-link" to="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              {/* Use o componente Link para criar um link para a página Projects */}
+              <Link className="nav-link" to="/projects">
                 Projects
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

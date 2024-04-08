@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import photoperfil from "./assets/cx.jpg";
+import "./css/style.css"
 
 
 function Profilephoto (){

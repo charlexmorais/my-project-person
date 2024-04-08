@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./css/style.css"
+import "./css/style.css";
 
 function Presentation() {
   return (
@@ -9,12 +9,17 @@ function Presentation() {
         <section>
           <h2>Hello, I'm Charle</h2>
           <div>
-            <button type="button" class="btn btn-dark">Download CV</button>
+            <a
+              href="https://drive.usercontent.google.com/u/0/uc?id=1Paipqp7_O7UqvRQIaysxwFARf_Rus5kJ&export=download"
+              className="btn btn-dark"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download CV
+            </a>
           </div>
         </section>
       </main>
-      
-
     </div>
   );
 }
