@@ -1,9 +1,10 @@
 import React from "react";
 
-function AboutPage() {
+function Mydescription() {
   return (
-    <div>
-      <h1>Sobre Mim</h1>
+    <div className="container">
+        <button>voltar ao inicio</button>
+      <h2>About Me</h2>
       <p>
         Decidi redirecionar minha carreira da área ambiental para o emocionante
         mundo do desenvolvimento de software em 2022, deixando para trás meu
@@ -22,15 +23,14 @@ function AboutPage() {
         responsivas que proporcionam uma experiência de usuário excepcional.
       </p>
       <p>
-        Você pode conferir alguns dos meus projetos e contribuições no{" "}
+        Você pode conferir alguns dos meus projetos e contribuições no GitHub:{" "}
         <a
           href="https://github.com/charlexmorais"
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub
+          https://github.com/charlexmorais
         </a>
-        .
       </p>
       <p>
         Estou totalmente aberto a oportunidades desafiadoras que me permitam
@@ -46,8 +46,9 @@ function AboutPage() {
         software. Estou ansioso para explorar novos horizontes e agregar valor a
         projetos futuros.
       </p>
+      
     </div>
   );
 }
 
-export default AboutPage;
+export default Mydescription;

@@ -1,18 +1,13 @@
+// index.js or main.jsx
 import React from "react";
-import ReactDOM from "react-dom/client";
-import Navigation from "./Menu.jsx";
-// @ts-ignore 
-import Presentation from "./Content.jsx";
-import Profilephoto from "./Sidebar.jsx";
-import App from "./App.jsx";
+// Altere sua importação de react-dom para importar de react-dom/client
+import { createRoot } from "react-dom/client";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    
-    <Navigation/>
-    <Profilephoto/>
-    <Presentation/>
-    <App/>
-   
-  </React.StrictMode>
+import { BrowserRouter } from "react-router-dom";
+import MainRoutes from "./routes/routes"; // Correct import statement
+
+createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <MainRoutes />
+  </BrowserRouter>
 );
