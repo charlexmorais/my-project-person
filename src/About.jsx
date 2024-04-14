@@ -1,54 +1,40 @@
 import React from "react";
-
-function Mydescription() {
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/style.css";
+import Navigation from "./Menu";
+import imgreact from "./assets/react.png";
+import imgjavascript from "./assets/javascript.png";
+import imgcss from "./assets/css.png";
+import imghtml from "./assets/html.png";
+import imgtypescript from "./assets/typescript.png";
+import imgnode from "./assets/node.js.png";
+import imgpostgresql from "./assets/postgresql.png";
+import "./css/NavBar.css";
+function MyDescription() {
   return (
-    <div className="container">
-        <button>voltar ao inicio</button>
-      <h2>About Me</h2>
-      <p>
-        Decidi redirecionar minha carreira da área ambiental para o emocionante
-        mundo do desenvolvimento de software em 2022, deixando para trás meu
-        estudo acadêmico em Controle Ambiental e Meio Ambiente. Em 2023, concluí
-        com sucesso o curso de Desenvolvimento Web Full Stack na MACH1, onde
-        aprimorei minhas habilidades em HTML, CSS, JavaScript, Node.js, React e
-        PostgreSQL. Estou determinado a aplicar esse conhecimento em projetos
-        inovadores na indústria de tecnologia.
-      </p>
-      <p>
-        Durante meu curso, mergulhei profundamente em JavaScript, utilizando-o
-        para criar soluções dinâmicas e interativas. Minha proficiência em
-        PostgreSQL também cresceu significativamente, capacitando-me a criar e
-        gerenciar bancos de dados eficientes para aplicativos web. Além disso,
-        destaco minha expertise em CSS, contribuindo para interfaces atraentes e
-        responsivas que proporcionam uma experiência de usuário excepcional.
-      </p>
-      <p>
-        Você pode conferir alguns dos meus projetos e contribuições no GitHub:{" "}
-        <a
-          href="https://github.com/charlexmorais"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          https://github.com/charlexmorais
-        </a>
-      </p>
-      <p>
-        Estou totalmente aberto a oportunidades desafiadoras que me permitam
-        aplicar minha experiência em JavaScript, React, PostgreSQL, CSS e Git de
-        maneira inovadora. Sou um profissional dedicado, pronto para contribuir
-        efetivamente para o sucesso de projetos, atendendo requisitos,
-        responsabilidades e conduzindo testes rigorosos para garantir a
-        qualidade do produto final.
-      </p>
-      <p>
-        Minha versatilidade e preparo para enfrentar desafios dinâmicos me
-        tornam um candidato ideal para oportunidades no desenvolvimento de
-        software. Estou ansioso para explorar novos horizontes e agregar valor a
-        projetos futuros.
-      </p>
+    <div>
+      <Navigation />
+
+      <h2 style={{ textAlign: "center" }}>Sobre mim</h2>
+      <div className="pagAbout ">
+        <p style={{ textAlign: "justify" }}>
+          Após a transição dos estudos ambientais, completei um curso de
+          Desenvolvimento Web Full Stack em 2023, aprimorando habilidades em
+          HTML, CSS, JavaScript, Node.js, React e PostgreSQL. Estou ansioso para
+          aplicar esse conhecimento em projetos tecnológicos inovadores,
+          destacando-me em soluções dinâmicas em JavaScript e gerenciamento
+          eficiente de banco de dados. Proficiente em CSS, crio interfaces
+          envolventes para experiências excepcionais do usuário. Pronto para
+          oportunidades desafiadoras, trago dedicação para o sucesso do projeto
+          por meio de testes rigorosos e solução de problemas adaptável. Minha
+          versatilidade e disposição para desafios dinâmicos me tornam um
+          candidato ideal para funções de desenvolvimento de software, pronto
+          para explorar e agregar valor a projetos futuros.
+        </p>
+      </div>
       
     </div>
   );
 }
 
-export default Mydescription;
+export default MyDescription;

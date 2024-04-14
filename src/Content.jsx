@@ -1,10 +1,16 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/style.css";
+import Navigation from "./Menu";
+
+
 
 function Presentation() {
   return (
+    
     <div>
+     
+      
       <main className="content">
         <section>
           <h2>Hello, I'm Charle</h2>
@@ -20,6 +26,7 @@ function Presentation() {
           </div>
         </section>
       </main>
+      
     </div>
   );
 }

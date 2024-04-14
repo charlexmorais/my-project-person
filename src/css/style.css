@@ -1,35 +1,101 @@
 body {
   overflow-y: hidden;
-  margin: 0;
+  margin: 0; /* Adiciona margem em todos os lados do corpo */
   padding: 0;
   background-color: #ffdd55;
+  font-family: 'Times New Roman', Times, serif;
 }
+.banner{
+  margin: 20px;
+}
+
 .nav-link {
   color: #ffffff; /* Defina a cor desejada aqui */
 }
 
-.headerfield {
-  background-color: black;
-  height: 50px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
 
-.content section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: flex-start; /* Alinha à esquerda horizontalmente */
-  height: 100vh; /* Define a altura da seção como a altura total da página */
-  margin-left: 3%;
-}
 aside {
   position: relative; /* Importante para o posicionamento absoluto */
 }
 
 aside img {
   width: 150px;
-  margin-top:2%;
+  margin-top: 2%;
   position: absolute;
   top: 0; /* Define a posição do topo da imagem */
   right: 0; /* Define a posição da direita da imagem */
 }
+
+/* Adicione estas regras ao seu arquivo style.css */
+.headerfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  height: 50px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Certifique-se de que o menu fique acima de outros elementos */
+}
+
+/* Adicione um espaçamento superior ao corpo para compensar o espaço ocupado pelo menu fixo */
+body {
+  padding-top: 60px; /* Ajuste conforme necessário para o tamanho do seu menu */
+}
+
+/* Estilos adicionais conforme necessário para o seu menu */
+.nav-item {
+  margin-right: 20px; /* Espaçamento entre os itens do menu */
+}
+p{
+  font-size: 0.9rem;
+}
+
+/* Estilo básico do footer */
+footer {
+  background-color:#0ACF83;
+  color:black;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.pagAbout {
+  padding: 20px;
+}
+
+.pagAbout p {
+  margin-bottom: 20px;
+}
+/* No seu arquivo style.css */
+/* No seu arquivo style.css */
+
+@media (max-width: 500px) {
+  .headerfield {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 25px;
+  }
+  p{
+    font-size: 0.7rem;
+  }
+  h2{
+    font-size:0.9rem;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    text-align: center;
+    font-size: 8px;
+  }
+  footer{
+    font-size: 8px;
+  }
+}
+
