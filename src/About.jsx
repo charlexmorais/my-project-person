@@ -2,14 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/style.css";
 import Navigation from "./Menu";
-import imgreact from "./assets/react.png";
-import imgjavascript from "./assets/javascript.png";
-import imgcss from "./assets/css.png";
-import imghtml from "./assets/html.png";
-import imgtypescript from "./assets/typescript.png";
-import imgnode from "./assets/node.js.png";
-import imgpostgresql from "./assets/postgresql.png";
 import "./css/NavBar.css";
+
+
 function MyDescription() {
   return (
     <div>

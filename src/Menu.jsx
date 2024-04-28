@@ -43,8 +43,9 @@ function Navigation() {
           >
             Download CV
           </a>
+          
         </div>
-      </div>
+       </div>
 
       <footer>© 2024 Charle Morais. All Rights Reserved.</footer>
     </header>

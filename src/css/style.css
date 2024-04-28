@@ -3,16 +3,15 @@ body {
   margin: 0; /* Adiciona margem em todos os lados do corpo */
   padding: 0;
   background-color: #ffdd55;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
-.banner{
+.banner {
   margin: 20px;
 }
 
 .nav-link {
   color: #ffffff; /* Defina a cor desejada aqui */
 }
-
 
 aside {
   position: relative; /* Importante para o posicionamento absoluto */
@@ -47,14 +46,14 @@ body {
 .nav-item {
   margin-right: 20px; /* Espaçamento entre os itens do menu */
 }
-p{
+p {
   font-size: 0.9rem;
 }
 
 /* Estilo básico do footer */
 footer {
-  background-color:#0ACF83;
-  color:black;
+  background-color: #0acf83;
+  color: black;
   padding: 10px 0;
   text-align: center;
   position: fixed;
@@ -69,8 +68,40 @@ footer {
 .pagAbout p {
   margin-bottom: 20px;
 }
-/* No seu arquivo style.css */
-/* No seu arquivo style.css */
+.box-project {
+  display: flex;
+  justify-content: space-between;
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+.box {
+  border: 8px solid #ccc;
+  padding: 10px;
+  margin: 10px auto; /* Centraliza horizontalmente */
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 300px;
+  height: 200px; /* Define a largura do box */
+  cursor: pointer;
+  transition: border-color 0.3s ease; /* Adiciona uma transição suave para a mudança da cor da borda */
+}
+
+.box:hover {
+  border-color: green; /* Altera a cor da borda para verde quando o mouse passa sobre o elemento */
+}
+.video {
+  max-width: 100%; /* Define a largura máxima como 100% do contêiner pai */
+  height: auto; /* Mantém a proporção original do vídeo */
+}
+
+
+.img-container {
+  position: relative;
+  padding-bottom: 45%;
+  padding-top: 10%;
+  height: 0;
+  overflow: hidden;
+}
 
 @media (max-width: 500px) {
   .headerfield {
@@ -79,11 +110,11 @@ footer {
     text-align: center;
     height: 25px;
   }
-  p{
+  p {
     font-size: 0.7rem;
   }
-  h2{
-    font-size:0.9rem;
+  h2 {
+    font-size: 0.9rem;
   }
 
   .nav {
@@ -94,8 +125,7 @@ footer {
     text-align: center;
     font-size: 8px;
   }
-  footer{
+  footer {
     font-size: 8px;
   }
 }
-

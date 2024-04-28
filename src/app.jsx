@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";  // Importando 
 import Navigation from "./Menu";
 import MyDescription from "./About";
 import ExibitionContacts from "./Contacts";
+import ExibitionProjects from "./Projects";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Route exact path="/" element={<Navigation />} />
         <Route exact path="/about" element={<MyDescription />} />
         <Route exact path="/contacts" element={<ExibitionContacts />} />
-        <Route exact path="/projects" element={<MyDescription />} />
+        <Route exact path="/projects" element={<ExibitionProjects/>} />
       </Routes>
     </BrowserRouter>
   );

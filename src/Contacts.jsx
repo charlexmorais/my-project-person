@@ -7,11 +7,12 @@ import imgwhatsapp from "./assets/whatsapp.png";
 import "../src/css/NavBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/style.css"; // Importe seu arquivo CSS aqui
+import Photoperfil from "./assets/cx.jpg";
 
 function ExibitionContacts() {
   return (
     <div>
-      <Navigation /> 
+      <Navigation />
       <header className="content">
         <h1>Hello! Nice to meet you, I'm Charle Xavier!</h1>
         <h2> I'm a full stack developer.</h2>
@@ -55,9 +56,12 @@ function ExibitionContacts() {
               style={{ marginRight: "10px" }}
             />
           </a>
+         
         </div>
       </header>
+      
     </div>
+    
   );
 }
 
